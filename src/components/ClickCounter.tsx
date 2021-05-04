@@ -1,10 +1,5 @@
 import React, { VFC } from 'react';
-import HigherOrderComponent from './HigherOrderComponent';
-
-interface Props {
-  count: number;
-  incrementCount: () => void;
-}
+import HigherOrderComponent, { Props } from './HigherOrderComponent';
 
 const ClickCounter: VFC<Props> = ({ count, incrementCount }) => {
   return (

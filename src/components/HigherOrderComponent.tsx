@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+export interface Props {
+  count: number;
+  incrementCount: () => void;
+}
+
 const HigherOrderComponent = OriginalComponent => {
   return () => {
     const [count, setCount] = useState<number>(0);
